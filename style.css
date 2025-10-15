@@ -8,10 +8,11 @@ body{
     background-color: var(--primary-color);
     padding: 70px;
     font-family: Righteous, sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 header{
-    background-color:tomato;
     display: flex;
     gap: 16px;
     align-items: center;
@@ -19,5 +20,79 @@ header{
 
 header span{
     font-size: 32px;
+    color: var(--secundary-color);
+}
+
+main{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+main a{
+    color: white;
+}
+
+.sombra{
+    position: absolute;
+    font-size: 500px;
+    color: #ffffff55;
+    z-index: -999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    
+}
+
+h1{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-grow: 1;
+    color: white;
+    font-size: 300px;
+}
+
+.container{
+    height: 154px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 64px;
+}
+
+.container a{
+    width: 400px;
+    height: 100px;
+    background-color: var(--secundary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px ;
+    color: white;
+}   
+
+.pikachu{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.descricao h2{
+    font-size: 64px;
+    color: var(--secundary-color);
+}
+
+.descricao p{
+    font-size: 20px;
+    color: #8E4106;
+    width: 500px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: var(--secundary-color);
 }
