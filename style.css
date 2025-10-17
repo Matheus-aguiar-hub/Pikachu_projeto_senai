@@ -35,7 +35,7 @@ main a{
 
 .sombra{
     position: absolute;
-    font-size: 500px;
+    font-size: 26vw;
     color: #ffffff55;
     z-index: -999;
     top: 50%;
@@ -50,11 +50,11 @@ h1{
     align-items: center;
     flex-grow: 1;
     color: white;
-    font-size: 300px;
+    font-size: 20vw;
 }
 
 .container{
-    height: 154px;
+    height: auto;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -91,8 +91,42 @@ h1{
 }
 
 footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     color: var(--secundary-color);
+}
+
+
+/*Tablet*/
+@media (max-width: 768px) {
+    body{
+        padding: 30px;
+    }
+    .sombra{
+        transform: translate(-50%, -180%);
+    }
+    main{
+        justify-content: space-around;
+    }
+    h1{
+        align-items: start;
+        transform: translateY(10%);
+    }
+    .container{
+        flex-direction: column;
+        align-items: center;
+        z-index: 1;
+        padding: 0;
+    }
+    .descricao p {
+        text-align: center;
+    }
+    footer {
+        display: none;
+    }
+
+}
+
+/*Mobile*/ 
+@media (max-width: 480px) {
+   
 }
