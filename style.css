@@ -68,7 +68,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 48px ;
+    font-size: 48px;
     color: white;
 }   
 
@@ -101,25 +101,31 @@ footer{
     body{
         padding: 30px;
     }
+
     .sombra{
         transform: translate(-50%, -180%);
     }
+
     main{
         justify-content: space-around;
     }
+
     h1{
         align-items: start;
         transform: translateY(10%);
     }
+
     .container{
         flex-direction: column;
         align-items: center;
         z-index: 1;
         padding: 0;
     }
+
     .descricao p {
         text-align: center;
     }
+
     footer {
         display: none;
     }
@@ -128,5 +134,19 @@ footer{
 
 /*Mobile*/ 
 @media (max-width: 480px) {
-   
+    .descricao h2{
+        font-size: 38px;
+    }
+    .descricao p{
+        display: none;
+    }
+    .sombra{
+        transform: translate(-50%, -230%);
+    }
+   .pikachu{
+    height: 50vh;
+   }
+   .container a{
+    width: 100%;
+   }
 }
